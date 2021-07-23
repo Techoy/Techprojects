@@ -1,0 +1,230 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Post in UI and Verify in DB",
+        "description": "",
+        "id": "jdbc-verification;post-in-ui-and-verify-in-db",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User navigate to \"http://www.techtorialacademy.dev.cc/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.techtorialacademy.dev.cc/",
+                  "offset": 18
+                }
+              ],
+              "location": "MyWebPage.user_navigate_to(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User authorized to make DB calls",
+            "match": {
+              "location": "MyWebPage.user_authorized_to_make_DB_calls()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User adds new post",
+            "match": {
+              "location": "MyWebPage.user_adds_new_post()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User queries the post from DB",
+            "match": {
+              "location": "MyWebPage.user_queries_the_post_from_DB()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Post in API and Verify in DB",
+        "description": "",
+        "id": "jdbc-verification;post-in-api-and-verify-in-db",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "User sends post request",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "status code is 201",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User queries the post from DB",
+            "match": {
+              "location": "MyWebPage.user_queries_the_post_from_DB()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Post in DB and verify in DB",
+        "description": "",
+        "id": "jdbc-verification;post-in-db-and-verify-in-db",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "User authorized to make DB calls",
+            "match": {
+              "location": "MyWebPage.user_authorized_to_make_DB_calls()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "User creates post in DB",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "Verify published post in DB  with results queries of DB",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Post in DB and verify in UI",
+        "description": "",
+        "id": "jdbc-verification;post-in-db-and-verify-in-ui",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "User logs in DB",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26,
+            "name": "User creates post in DB",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "Verify published post in DB  with UI posts",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Post in UI and verify in UI",
+        "description": "",
+        "id": "jdbc-verification;post-in-ui-and-verify-in-ui",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "User navigates to UI",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "Add new posts in UI",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 33,
+            "name": "Verify UI posts with UI",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "JDBC verification",
+    "description": "",
+    "id": "jdbc-verification",
+    "keyword": "Feature",
+    "uri": "MyWebPage.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@uidb"
+      }
+    ]
+  }
+]
